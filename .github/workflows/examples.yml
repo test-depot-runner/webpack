@@ -5,7 +5,7 @@ on:
 
 jobs:
   examples:
-    runs-on: [self-hosted, monkci-runners-4vcpu]
+    runs-on: depot-ubuntu-24.04
     permissions:
       contents: write
       pull-requests: write
