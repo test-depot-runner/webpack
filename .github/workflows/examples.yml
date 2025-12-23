@@ -2,12 +2,10 @@ name: Update examples
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * 0"
 
 jobs:
   examples:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, monkci-runners-4vcpu]
     permissions:
       contents: write
       pull-requests: write
